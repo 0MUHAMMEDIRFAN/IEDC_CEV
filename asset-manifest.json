@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/IEDC_CEV/static/css/main.31d6cfe0.css",
+    "main.js": "/IEDC_CEV/static/js/main.800ccb78.js",
+    "index.html": "/IEDC_CEV/index.html",
+    "main.800ccb78.js.map": "/IEDC_CEV/static/js/main.800ccb78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.800ccb78.js"
+  ]
+}
