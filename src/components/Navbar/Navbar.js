@@ -15,7 +15,7 @@ function Navbar() {
   window.addEventListener("scroll", scrolled)
   return (
     <div className={moved ? "navbar scrolled" : "navbar"}>
-      <h2 ClassName="logo">IEDC</h2>
+      <h2 className="logo">IEDC</h2>
       <div className='navShort'>
         <h4>Events</h4>
         <h4>Team</h4>
