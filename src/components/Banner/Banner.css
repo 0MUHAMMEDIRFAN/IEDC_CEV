@@ -1,0 +1,41 @@
+.banner{
+    background-image: url(https://images.pexels.com/photos/12709063/pexels-photo-12709063.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 400px;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 10%;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+}
+
+.contents > *:not(h1){
+    margin-bottom: 8px;
+}
+
+.contents > *{
+    transform: perspective(200);
+}
+
+.contents h1 span{
+    color: rgb(219, 108, 16);
+}
+
+.contents button{
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    background: rgb(219, 108, 16);
+    /* margin-inline: auto; */
+    color: #000;
+}

@@ -1,0 +1,28 @@
+.navbar{
+    position: fixed;
+    height: 60px;
+    width: calc(100% - 40px);
+    /* background: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-inline: 20px; 
+    /* transition: all 0.3s ease; */
+}
+
+.scrolled{
+    background: rgba(0, 0, 0, 0.2) !important;
+    /* box-shadow: inset 0 -8px 40px -6px black; */
+    backdrop-filter: blur(10px);
+}
+
+.navShort{
+    display: flex;
+    flex-direction: row;
+}
+
+.navShort h4{
+    margin: 10px;
+
+}
