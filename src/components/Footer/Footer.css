@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+    /* width: 100%; */
+    padding: 20px;
+    /* background: white; */
+}
+
+.footer > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer i{
+    margin: 10px;
+    font-size: x-large;
+    color: #DB6C10;
+    cursor: pointer;
+}
+
+h4{
+    font-size: small;
+}

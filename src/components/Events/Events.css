@@ -1,4 +1,36 @@
 .events{
-    background: #fff;
-    height: 100px;
+    /* background: #fff; */
+    /* height: 450px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.events .images{
+    overflow: scroll;
+    display: flex;
+    width: 100%;
+}
+
+.events .images .image{
+    /* width: 5000px; */
+    padding: 10px;
+    /* overflow: scroll; */
+}
+
+.image img{
+    height: 400px;
+    /* width: 100%; */
+    border-radius: 2rem;
+}
+
+.events .images::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.events .radio input{
+    margin: 0 2px;
 }

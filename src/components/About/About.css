@@ -1,19 +1,20 @@
 .container{
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 20px;
 }
 
 .container div{
     width: 250px;
-    height: 300px;
+    min-height: 230px;
     display: flex;
-    background: #090909;
+    background: linear-gradient(to right bottom, #252525 ,#151515 ,#252525);
     border-radius: 1em;
     flex-direction: column;
     /* justify-content: center; */
     padding: 20px;
+    margin: 10px;
     align-items: center;
 }
 

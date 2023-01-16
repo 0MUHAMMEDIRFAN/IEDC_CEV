@@ -11,3 +11,8 @@
     background: #000;
     
 }
+button{
+    cursor: pointer;
+    border: none;
+
+}

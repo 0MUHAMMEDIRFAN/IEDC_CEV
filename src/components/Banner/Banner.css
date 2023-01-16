@@ -1,4 +1,4 @@
-.banner{
+.banner {
     background-image: url(https://images.pexels.com/photos/12709063/pexels-photo-12709063.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-size: contain;
@@ -9,7 +9,7 @@
     height: 400px;
 }
 
-.contents{
+.contents {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -19,23 +19,37 @@
     height: 100%;
 }
 
-.contents > *:not(h1){
+.contents>*:not(h1) {
     margin-bottom: 8px;
 }
 
-.contents > *{
+.contents>* {
     transform: perspective(200);
 }
 
-.contents h1 span{
-    color: rgb(219, 108, 16);
+.contents h1 span {
+    color: #DB6C10;
 }
 
-.contents button{
+.contents button {
     width: 110px;
     height: 35px;
     border-radius: 20px;
-    background: rgb(219, 108, 16);
+    /* background: #DB6C10; */
+    background: linear-gradient(to bottom right, #DB6C10 0%, #c4712d 51%, #f0a76c 100%);
+    /* box-shadow: 0 7px 7px rgb(44, 44, 44), 1px 0 7px rgb(0, 0, 0), -1px -1px 7px rgb(34, 34, 34); */
     /* margin-inline: auto; */
     color: #000;
+    transition: all 0.05s ease-in-out;
+}
+.contents button:hover {
+    /* background: linear-gradient(to bottom right, #ff3300 0%, #e06b0b 51%, #f0a76c 100%); */
+    transform: scaleX(107%) scaleY(105%);
+}
+
+@media only screen and (max-width: 710px) { 
+    .banner{
+        background-size: cover;
+        background-position: top;
+    }   
 }

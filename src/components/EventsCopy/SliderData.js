@@ -1,0 +1,22 @@
+export const SliderData = [
+    {
+      image:
+      "http://iedc.gectcr.ac.in/images/img-1.jpeg",
+    },
+    {
+      image:
+      "http://iedc.gectcr.ac.in/images/img-2.jpeg",
+    },
+    {
+      image:
+      "http://iedc.gectcr.ac.in/images/img-1.jpeg",
+    },
+    {
+      image:
+      "http://iedc.gectcr.ac.in/images/img-2.jpeg",
+    },
+    {
+      image:
+      "http://iedc.gectcr.ac.in/images/img-1.jpeg",
+    }
+  ];
