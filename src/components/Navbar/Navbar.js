@@ -4,6 +4,7 @@ import "./Navbar.css"
 
 function Navbar() {
   const [moved, setMoved] = useState(false)
+  const [closed, setClosed] = useState(true)
   const [menu, setMenu] = useState(false)
   const scrolled = (h) => {
     if (window.scrollY >= 50) {
@@ -13,11 +14,12 @@ function Navbar() {
       setMoved(false)
     }
     setMenu(false)
+    setClosed(true)
   }
   window.addEventListener("scroll", scrolled)
   return (
-    <div className="navbar ">
-      <div className={moved ? "scrolled blur" :"scrolled"}></div>
+    <div className="navbar">
+      <div className={moved || !closed ? "scrolled blur" :"scrolled"}></div>
       <h2 className="logo">IEDC</h2>
       <div className={menu ? "navLinks" : "navLinks hide"}>
         <h4>Events</h4>
@@ -28,6 +30,9 @@ function Navbar() {
       </div>
       <label className='menuBtn' onClick={() => {
         setMenu(!menu);
+        setClosed(!closed);
+        // setMoved(true);
+        if(closed && menu){setClosed(false)}
         console.log("clicked");
       }}><span></span></label>
       <div className={menu? 'curtain ': "curtain none"} onClick={()=>{setMenu(false)}}></div>

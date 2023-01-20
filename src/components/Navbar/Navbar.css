@@ -6,17 +6,17 @@
     top: 0;
     left: 0;
     z-index: calc(1-2);
-    border-bottom: solid 1px #000;
 }
 .blur{
+    border-bottom: solid 1px #000;
     backdrop-filter: blur(10px);
 
 }
-.navbar > :not(:first-child){
+.navbar > :not(:last-child){
     z-index: 10;
 }
 .navbar {
-    z-index: 1000;
+    z-index: 2000;
     position: fixed;
     height: 60px;
     width: calc(100% - 40px);
@@ -81,7 +81,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1999;
+    /* z-index: 1999; */
     width: 100%;
     height: 100000px;
 }
