@@ -9,7 +9,7 @@
     height: 400px;
 }
 
-.contents {
+.banner .contents {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -19,7 +19,7 @@
     height: 100%;
 }
 
-.contents>*:not(h1) {
+.banner .contents>*:not(h1) {
     margin-bottom: 8px;
 }
 
@@ -27,11 +27,11 @@
     transform: perspective(200);
 }
 
-.contents h1 span {
+.banner .contents h1 span {
     color: #DB6C10;
 }
 
-.contents button {
+.banner .contents button {
     width: 110px;
     height: 35px;
     border-radius: 20px;
@@ -42,14 +42,15 @@
     color: #000;
     transition: all 0.05s ease-in-out;
 }
-.contents button:hover {
+
+.banner .contents button:hover {
     /* background: linear-gradient(to bottom right, #ff3300 0%, #e06b0b 51%, #f0a76c 100%); */
     transform: scaleX(107%) scaleY(105%);
 }
 
-@media only screen and (max-width: 710px) { 
-    .banner{
+@media only screen and (max-width: 710px) {
+    .banner {
         background-size: cover;
         background-position: top;
-    }   
+    }
 }

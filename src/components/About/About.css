@@ -19,6 +19,10 @@
 }
 
 .container div h1{
-    color: rgb(219, 108, 16);
+    color: #DB6C10;
     margin-bottom: 5px;
+}
+
+.container div p{
+    line-height: 30px;
 }

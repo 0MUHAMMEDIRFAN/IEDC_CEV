@@ -16,6 +16,13 @@ function Navbar() {
     setMenu(false)
     setClosed(true)
   }
+  const navBtn = () => {
+    setMenu(!menu);
+    setClosed(!closed);
+    // setMoved(true);
+    if(closed && menu){setClosed(false)}
+    console.log("clicked");
+  }
   window.addEventListener("scroll", scrolled)
   return (
     <div className="navbar">
@@ -28,14 +35,8 @@ function Navbar() {
         <h4>Contact</h4>
 
       </div>
-      <label className='menuBtn' onClick={() => {
-        setMenu(!menu);
-        setClosed(!closed);
-        // setMoved(true);
-        if(closed && menu){setClosed(false)}
-        console.log("clicked");
-      }}><span></span></label>
-      <div className={menu? 'curtain ': "curtain none"} onClick={()=>{setMenu(false)}}></div>
+      <label className='menuBtn' onClick={navBtn}><span></span></label>
+      <div className={menu? 'curtain ': "curtain none"} onClick={navBtn}></div>
 
     </div>
   )
