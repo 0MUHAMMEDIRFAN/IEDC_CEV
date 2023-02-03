@@ -35,7 +35,7 @@ function Navbar() {
         <h4>Contact</h4>
 
       </div>
-      <label className='menuBtn' onClick={navBtn}><span></span></label>
+      <label className="menuBtn" onClick={navBtn}><span className={menu ? "x":""}></span></label>
       <div className={menu? 'curtain ': "curtain none"} onClick={navBtn}></div>
 
     </div>

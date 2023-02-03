@@ -16,3 +16,7 @@ button{
     border: none;
 
 }
+
+button,a,input,textarea,select,div{
+    -webkit-tap-highlight-color: rgba(000, 000, 000, .2);
+}

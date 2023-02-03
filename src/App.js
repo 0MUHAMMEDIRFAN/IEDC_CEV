@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/Footer/Footer.js';
 import Navbar from './components/Navbar/Navbar.js';
-// import Events from './components/Events/Events'
+import Events from './components/Events/Events'
 import Banner from './components/Banner/Banner'
 import About from './components/About/About';
 import ImageSlider from './components/EventsCopy/Events';
@@ -16,8 +16,8 @@ function App() {
         <Banner />
         <About />
         <Startup/>
-        {/* <Events /> */}
-        <ImageSlider />
+        <Events />
+        {/* <ImageSlider /> */}
         <Footer />
 
       </header>
