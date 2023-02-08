@@ -14,22 +14,19 @@ function Events() {
   const [scrolled, setScrolled] = useState(0)
   const [imgwidth, setImgwidth] = useState(3)
   const [getId, setGetId] = useState(0)
-  // const sectionwidth = window.innerWidth;
-  let radio = document.querySelector("#id" + getId)
+  let imgs = document.getElementById("images")
+  const radio = document.querySelector("#id" + getId)
   useEffect(() => {
     setImgwidth(document.querySelector(".events .images .image").offsetWidth);
-    
   }, [])
   const slide = (event) => {
+    // console.log(event)
     setScrolled(event.target.scrollLeft);
     setGetId(Math.round((scrolled) / (imgwidth)))
     radio.checked = true;
-    // console.log(Math.round((scrolled) / (imgwidth)));
-    scroll(event)
   }
-  const scroll = (event) => {
-    // setScrolled(120)
-    // event.target.scrollLeft = 0;
+  const scroll = (index) => {
+    imgs.scrollLeft= (index*imgwidth);
 
   }
 
@@ -38,7 +35,7 @@ function Events() {
   return (
     <div className='events' id='events' >
 
-      <div className='images' id="images" onScroll={slide}>
+      <div className='images' id="images" onScroll={slide} >
         {images.map((obj) => {
           return (
             <div className="image">
@@ -51,17 +48,12 @@ function Events() {
         {
           images.map((key, index) => {
             return (
-              <input type="radio" name="img" id={"id" + index} onClick={scroll} />
+              <input type="radio" name="img" id={"id" + index} onClick={()=>{scroll(index)}} />
             )
 
           })
         }
-        {/* <input type="radio" name='img' defaultChecked />
-        <input type="radio" name='img' />
-        <input type="radio" name='img' />
-        <input type="radio" name='img' />
-        <input type="radio" name='img' />
-      <input type="radio" name='img' /> */}
+        {/* <progress style={{width:"100px", height:"30px"}} min={0} max={100} value={50}></progress> */}
       </div>
     </div>
   )
