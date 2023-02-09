@@ -22,18 +22,18 @@ function Events() {
     radio.checked = true;
   }
   const scroll = (index) => {
-    imgs.scrollLeft= (index*imgwidth);
-    
+    imgs.scrollLeft = (index * imgwidth);
   }
-  
+
   useEffect(() => {
     setImgwidth(document.querySelector(".events .images .image").offsetWidth);
+    document.getElementById("id0").checked = true;
   }, [])
-  
+
   return (
     <div className='events' id='events' >
 
-      <div className='images' id="images" onScroll={slide} >
+      <div className='images' id="images" onScroll={slide}  >
         {images.map((obj) => {
           return (
             <div className="image">
@@ -46,12 +46,15 @@ function Events() {
         {
           images.map((key, index) => {
             return (
-              <input type="radio" name="img" id={"id" + index} onClick={()=>{scroll(index)}} />
-            )
+              <input type="radio" name="img" id={"id" + index} onClick={() => { scroll(index) }} />
+              )
+              
+            })
+          }
 
-          })
-        }
-        <progress style={{width:"100px", height:"30px"}} min={0} max={100} value={50}></progress>
+        {/* <progress style={{width:"100px", height:"30px"}} min={0} max={100} value={50}></progress> */}
+          <div className="nav left" onClick={()=>{imgs.scrollLeft-=imgwidth}}><i class='bx bxs-left-arrow-alt'></i></div>
+          <div className="nav right" onClick={()=>{imgs.scrollLeft+=imgwidth}}><i class='bx bxs-right-arrow-alt'></i></div>
       </div>
     </div>
   )
