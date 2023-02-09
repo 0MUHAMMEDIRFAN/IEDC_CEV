@@ -25,8 +25,6 @@
 
 .events .images .image img {
     width: calc((100vw/3) - 20px);
-    /* height: 100px; */
-
     border-radius: 2rem;
 }
 
@@ -39,7 +37,6 @@
     display: flex;
     align-items: center;
     height: 20px;
-    /* background: green; */
 }
 .events .radio input {
     margin: 0 4px;
@@ -56,10 +53,6 @@
     width: 10px;
     height: 10px;
 }
-.events .radio > :not(input:checked ~ *)  {
-    width: 6px;
-    height: 6px;
-}
 .events .radio input:checked[type="radio"] {
     border: 1px solid currentColor;
     width: 10px;
@@ -67,6 +60,10 @@
     height: 10px;
     /* height: 8px; */
     background: #ff7300;
+}
+.events .radio > :not(input:checked ~ *)  {
+    width: 6px;
+    height: 6px;
 }
 .events .radio input:checked + input {
     width: 6px;
@@ -93,4 +90,8 @@
         width: calc((100vw/1) - 20px);
     }
 
+}
+
+button:active{
+    scale: 0.95;
 }

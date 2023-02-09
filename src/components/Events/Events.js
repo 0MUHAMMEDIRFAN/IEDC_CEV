@@ -15,23 +15,21 @@ function Events() {
   const [imgwidth, setImgwidth] = useState(3)
   const [getId, setGetId] = useState(0)
   let imgs = document.getElementById("images")
-  const radio = document.querySelector("#id" + getId)
-  useEffect(() => {
-    setImgwidth(document.querySelector(".events .images .image").offsetWidth);
-  }, [])
+  const radio = document.getElementById("id" + getId)
   const slide = (event) => {
-    // console.log(event)
     setScrolled(event.target.scrollLeft);
     setGetId(Math.round((scrolled) / (imgwidth)))
     radio.checked = true;
   }
   const scroll = (index) => {
     imgs.scrollLeft= (index*imgwidth);
-
+    
   }
-
-
-  // const order = 1;
+  
+  useEffect((props) => {
+    setImgwidth(document.querySelector(".events .images .image").offsetWidth);
+  }, [])
+  
   return (
     <div className='events' id='events' >
 
