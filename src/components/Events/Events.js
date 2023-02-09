@@ -26,7 +26,7 @@ function Events() {
     
   }
   
-  useEffect((props) => {
+  useEffect(() => {
     setImgwidth(document.querySelector(".events .images .image").offsetWidth);
   }, [])
   
@@ -51,11 +51,11 @@ function Events() {
 
           })
         }
-        {/* <progress style={{width:"100px", height:"30px"}} min={0} max={100} value={50}></progress> */}
+        <progress style={{width:"100px", height:"30px"}} min={0} max={100} value={50}></progress>
       </div>
     </div>
   )
 
 }
 
-export default Events
+export default Events;

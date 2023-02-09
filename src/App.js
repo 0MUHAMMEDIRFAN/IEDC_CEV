@@ -17,7 +17,6 @@ function App() {
         <About />
         <Startup/>
         <Events />
-        {/* <ImageSlider /> */}
         <Footer />
 
       </header>
