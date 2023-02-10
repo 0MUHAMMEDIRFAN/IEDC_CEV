@@ -1,0 +1,49 @@
+.execom {
+    padding-top: 60px;
+    /* background: rgb(56, 56, 56); */
+    width: 100%;
+
+
+}
+
+.execom .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.execom .cards .card {
+    /* overflow: hidden; */
+    width: 270px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right bottom, #252525, #151515, #252525);
+    border-radius: 20px;
+    justify-content: center;
+    outline: white;
+    outline: solid 1px;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.execom .cards .card .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+
+}
+
+.execom .cards .card .name {
+    font-size: 2em;
+}
+
+.execom .cards .card .role {
+    font-size: 1em;
+    color: #707070;
+
+}

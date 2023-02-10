@@ -53,8 +53,8 @@ function Events() {
           }
 
         {/* <progress style={{width:"100px", height:"30px"}} min={0} max={100} value={50}></progress> */}
-          <div className="nav left" onClick={()=>{imgs.scrollLeft-=imgwidth}}><i class='bx bxs-left-arrow-alt'></i></div>
-          <div className="nav right" onClick={()=>{imgs.scrollLeft+=imgwidth}}><i class='bx bxs-right-arrow-alt'></i></div>
+          <div className="nav left" onClick={()=>{imgs.scrollLeft-=imgwidth}}><i className='bx bxs-left-arrow-alt'></i></div>
+          <div className="nav right" onClick={()=>{imgs.scrollLeft+=imgwidth}}><i className='bx bxs-right-arrow-alt'></i></div>
       </div>
     </div>
   )

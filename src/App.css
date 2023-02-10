@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #000;
+    min-width: 280px;
+}
+
 .App {
     background: #000;
 
