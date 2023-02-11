@@ -2,7 +2,7 @@
   "name": "iedc_cev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://0muhammedirfan.github.io/",
+  "homepage": "https://0muhammedirfan.github.io/IEDC_CEV/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
