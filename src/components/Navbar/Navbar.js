@@ -29,20 +29,20 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className={moved || !closed ? "scrolled blur" : "scrolled"}></div>
-      <h2 className="logo" onClick={() => { navigate("/") }}>IEDC</h2>
+      <h2 className="logo" onClick={() => { navigate("/IEDC_CEV") }}>IEDC</h2>
       <div className={menu ? "navLinks" : "navLinks hide"}>
         {/* <BrowserRouter> */}
           {/* <Routes> */}
-            <Link to="/events">
+            <Link to="/IEDC_CEV/events" >
               <h4>Events</h4>
             </Link>
-            <Link to="/team">
+            <Link to="/IEDC_CEV/team">
               <h4>Team</h4>
             </Link>
-            <Link to="/About">
+            <Link to="/IEDC_CEV/about">
               <h4>About</h4>
             </Link>
-            <Link to="/Contact">
+            <Link to="/IEDC_CEV/contact">
               <h4>Contact</h4>
             </Link>
           {/* </Routes> */}

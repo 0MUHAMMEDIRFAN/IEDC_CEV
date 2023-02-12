@@ -1,5 +1,6 @@
 import React from 'react'
 import Execom from '../components/Execom/Execom'
+import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 
 function Team() {
@@ -7,6 +8,7 @@ function Team() {
     <div>
       <Navbar/>
       <Execom/>
+      <Footer/>
     </div>
   )
 }

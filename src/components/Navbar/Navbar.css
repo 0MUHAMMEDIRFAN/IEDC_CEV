@@ -22,12 +22,11 @@
     z-index: 2000;
     position: fixed;
     height: 60px;
-    width: calc(100%);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    z-index: 100;
     padding-inline: 20px;
 }
 
@@ -37,13 +36,14 @@
     flex-direction: row;
 }
 
-.navbar .navLinks h4::selection {
-    display: none;
-}
 .navbar .navLinks h4 {
     padding: 15px;
     cursor: pointer;
+    /* color: ; */
     transition: all ease 0.2s;
+}
+.navbar .navLinks h4::selection {
+    display: none;
 }
 
 .navbar .menuBtn {

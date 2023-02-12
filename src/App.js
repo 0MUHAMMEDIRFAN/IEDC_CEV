@@ -11,8 +11,8 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route exact path="/team" element={<Team />} />
+            <Route path="/IEDC_CEV" element={<Home />} />
+            <Route exact path="/IEDC_CEV/team" element={<Team />} />
           </Routes>
         </BrowserRouter>
       </header>

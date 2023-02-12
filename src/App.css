@@ -37,3 +37,7 @@ select,
 div {
     -webkit-tap-highlight-color: rgba(000, 000, 000, .2);
 }
+
+a , Link{
+    text-decoration: none !important;
+}

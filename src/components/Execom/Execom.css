@@ -1,8 +1,10 @@
+*{
+    /* outline: solid 1px blue; */
+}
 .execom {
     padding-top: 60px;
     /* background: rgb(56, 56, 56); */
     width: 100%;
-
 
 }
 
@@ -11,39 +13,114 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10px;
-    width: 100%;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    /* width: 100%; */
 }
 
-.execom .cards .card {
-    /* overflow: hidden; */
+.execom .cards .parentCard {
+    overflow: hidden;
+    position: relative;
+    content: "";
+    width: 278px;
+    height: 378px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+.execom .cards .parentCard:first-child {
+    scale: 1.07;
+}
+
+.execom .cards .parentCard::after {
+    position: absolute;
+    content: "";
+    width: 200%;
+    height: 200%;
+    /* background: #101010; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    letter-spacing: 5px;
+    background: linear-gradient(to left, #cbcace 0%, #c0bfc3 8%, #b5b4b8 20%, #aaa9ad 25%,#9f9ea2 30%, #949497 40%, #8a898d 50%, transparent 80%);
+    /* background: conic-gradient(transparent 180deg, #FEDB37 230deg, #FDB931 280deg, #9f7928 320deg, #8A6E2F 360deg); */
+    /* box-shadow: inset 20px 20px 20px #0000008c; */
+    /* z-index: -1; */
+    /* display: none; */
+    animation: rotate 6s linear infinite;
+}
+
+.execom .cards .parentCard:not(:nth-child(5)~*)::after {
+    /* background: #fff; */
+    animation: rotate 7s linear infinite;
+    /* background: conic-gradient(#000 100deg, #B08D57 360deg, #9C7A3C 350deg, #895E1A 300deg, #804A00 250deg, #804A00 180deg); */
+    background: linear-gradient(to left,  #665233 0%, #554321 8%, #634514 20%, #804A00 30%, #643a00 40% ,transparent 80%);
+}
+
+.execom .cards .parentCard:first-child::after {
+    animation: rotate 5s linear infinite;
+    /* background: conic-gradient(#000 120deg, #ffe054 360deg, #FEDB37 350deg, #FDB931 300deg, #9f7928 250deg, #8A6E2F 180deg); */
+    background: linear-gradient(to left, #cea972 0%, #c4a069 8%, #ba9660 20%, #b08d57 25%,#a6844e 30%, #9c7b46 40%, #92723d 50%,#9f7928 60%, transparent 80%);
+    /* background: linear-gradient(to left, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%); */
+    scale: 150%;
+
+}
+
+.execom .cards .parentCard .card {
+    position: relative;
     width: 270px;
     height: 370px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right bottom, #252525, #151515, #252525);
+    /* background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
     border-radius: 20px;
     justify-content: center;
-    outline: white;
-    outline: solid 1px;
+    /* outline: solid 1px #fff; */
     align-items: center;
+    /* box-shadow: 16px 14px 20px #0000008c; */
     gap: 5px;
-    padding: 10px;
+    padding: 15px;
+    z-index: 1000;
+    /* display: none; */
 }
 
-.execom .cards .card .image {
-    height: 200px;
-    width: 200px;
+
+.execom .cards .parentCard .card .image {
+    height: 210px;
+    width: 210px;
     border-radius: 100%;
 
 }
 
-.execom .cards .card .name {
+.execom .cards .parentCard .card .name {
     font-size: 2em;
+    color: #DB6C10;
 }
 
-.execom .cards .card .role {
+.execom .cards .parentCard .card .role {
     font-size: 1em;
     color: #707070;
+    
+}
+.execom .cards .parentCard .card i {
+    font-size: 22px;
+}
 
+
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
 }
