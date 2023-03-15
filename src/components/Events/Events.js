@@ -1,5 +1,5 @@
 import './Events.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 
 function Events() {
@@ -12,7 +12,8 @@ function Events() {
     "https://picsum.photos/id/5/5000/3333"
   ]
   const [scrolled, setScrolled] = useState(0)
-  const [imgwidth, setImgwidth] = useState(3)
+  const [imgwidth, setImgwidth] = useState(320)
+  // const imgwidth =document.querySelector(".events .images .image").offsetWidth; 
   const [getId, setGetId] = useState(0)
   let imgs = document.getElementById("images")
   const radio = document.getElementById("id" + getId)
@@ -25,18 +26,14 @@ function Events() {
     imgs.scrollLeft = (index * imgwidth);
   }
 
-  useEffect(() => {
-    setImgwidth(document.querySelector(".events .images .image").offsetWidth);
-    document.getElementById("id0").checked = true;
-  }, [])
 
   return (
     <div className='events' id='events' >
 
       <div className='images' id="images" onScroll={slide}  >
-        {images.map((obj) => {
+        {images.map((obj, index) => {
           return (
-            <div className="image">
+            <div className="image" key={index} onLoad={e => setImgwidth(e.target.offsetWidth)}>
               <img src={obj} alt="NETWORK ERROR" draggable="false" />
             </div>
           )
@@ -44,17 +41,19 @@ function Events() {
       </div>
       <div className="radio">
         {
-          images.map((key, index) => {
+          images.map((data, index) => {
+
             return (
-              <input type="radio" name="img" id={"id" + index} onClick={() => { scroll(index) }} />
-              )
-              
-            })
-          }
+              (index <= images.length - (Math.round(window.innerWidth / imgwidth))) && <input type="radio" name="img" id={"id" + index} key={index} onClick={() => { scroll(index) }} />
+            )
+
+          })
+          
+        }
 
         {/* <progress style={{width:"100px", height:"30px"}} min={0} max={100} value={50}></progress> */}
-          <div className="nav left" onClick={()=>{imgs.scrollLeft-=imgwidth}}><i className='bx bxs-left-arrow-alt'></i></div>
-          <div className="nav right" onClick={()=>{imgs.scrollLeft+=imgwidth}}><i className='bx bxs-right-arrow-alt'></i></div>
+        <div className="nav left" onClick={() => { imgs.scrollLeft -= imgwidth }}><i className='bx bxs-left-arrow-alt'></i></div>
+        <div className="nav right" onClick={() => { imgs.scrollLeft += imgwidth }}><i className='bx bxs-right-arrow-alt'></i></div>
       </div>
     </div>
   )

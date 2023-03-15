@@ -131,7 +131,6 @@
         top: 60px;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        /* -webkit-tap-highlight-color: transparent; */
         border-radius: 1em;
         flex-direction: column;
         overflow: hidden;
@@ -150,7 +149,6 @@
         width: 100%;
     }
     .navbar .navLinks h4 {
-        /* backdrop-filter: blur(10px); */
         font-size: 1rem;
         text-align: center;
         width: 100%;
