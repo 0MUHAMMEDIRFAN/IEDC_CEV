@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/IEDC_CEV/static/css/main.59e45b42.css",
-    "main.js": "/IEDC_CEV/static/js/main.91548d04.js",
+    "main.css": "/IEDC_CEV/static/css/main.5502f8d9.css",
+    "main.js": "/IEDC_CEV/static/js/main.1a7cdda1.js",
+    "static/media/map.png": "/IEDC_CEV/static/media/map.9d32d9f53a485683e592.png",
     "static/media/bulb(2).jpg": "/IEDC_CEV/static/media/bulb(2).bd947ee4f6554e2abcd2.jpg",
     "index.html": "/IEDC_CEV/index.html",
-    "main.59e45b42.css.map": "/IEDC_CEV/static/css/main.59e45b42.css.map",
-    "main.91548d04.js.map": "/IEDC_CEV/static/js/main.91548d04.js.map"
+    "main.5502f8d9.css.map": "/IEDC_CEV/static/css/main.5502f8d9.css.map",
+    "main.1a7cdda1.js.map": "/IEDC_CEV/static/js/main.1a7cdda1.js.map"
   },
   "entrypoints": [
-    "static/css/main.59e45b42.css",
-    "static/js/main.91548d04.js"
+    "static/css/main.5502f8d9.css",
+    "static/js/main.1a7cdda1.js"
   ]
 }
