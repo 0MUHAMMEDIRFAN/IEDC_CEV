@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .startup>h1 {
@@ -49,17 +50,22 @@
     .startup {
         padding-inline: 10%;
     }
-
+    
     .startup>h1 {
         text-align: center;
     }
-
+    
     .startup .contents {
         flex-direction: column;
         max-width: 350px;
     }
-
+    
     /* .startup .contents .startupImg,
     .text {} */
-
+    
+}
+@media screen and (max-width:520px) {
+    .startup{
+        height: max-content;
+    }
 }

@@ -1,13 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
 import "./Navbar.css"
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 function Navbar() {
   const [moved, setMoved] = useState(false)
   const [closed, setClosed] = useState(true)
   const [menu, setMenu] = useState(false)
-  const navigate = useNavigate();
+  // const txtCev = document.getElementById("txtCev")
+  // const logo = document.getElementById("logo")
   const scrolled = (h) => {
     if (window.scrollY >= 50) {
       setMoved(true)
@@ -15,6 +16,14 @@ function Navbar() {
     else {
       setMoved(false)
     }
+    // if (window.scrollY >= 100) {
+    //   txtCev.classList.add("moveTxtCev")
+    //   logo.style.opacity="0"
+    // }
+    // else {
+    //   txtCev.classList.remove("moveTxtCev")
+    //   logo.style.opacity="1"
+    // }
     setMenu(false)
     setClosed(true)
   }
@@ -29,7 +38,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className={moved || !closed ? "scrolled blur" : "scrolled"}></div>
-      <h2 className="logo">IEDC</h2>
+      <h2 id='logo'>IEDC</h2>
       <div className={menu ? "navLinks" : "navLinks hide"}>
         {/* <BrowserRouter> */}
           {/* <Routes> */}

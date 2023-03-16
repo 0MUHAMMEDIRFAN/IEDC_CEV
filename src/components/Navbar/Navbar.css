@@ -30,7 +30,9 @@
     padding-inline: 20px;
 }
 
-
+.navbar #logo{
+    transition: all ease .4s;
+}
 .navbar .navLinks {
     display: flex;
     flex-direction: row;

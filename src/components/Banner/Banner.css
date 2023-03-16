@@ -28,8 +28,17 @@
     transform: perspective(200);
 }
 
+/* .banner .contents h1 { */
+    /* position: sticky; */
+    /* top: 12.5px; */
+    /* z-index: 2001; */
+    /* transition: all ease .4s; */
+/* } */
+
 .banner .contents h1 span {
     color: #DB6C10;
+    /* position: sticky; */
+    /* top: 100px; */
 }
 
 .banner .contents button {
@@ -45,16 +54,30 @@
 }
 
 .banner .contents button:hover {
+    color: #444;
     /* background: linear-gradient(to bottom right, #ff3300 0%, #e06b0b 51%, #f0a76c 100%); */
-    transform: scaleX(107%) scaleY(105%);
+    /* transform: scaleX(107%) scaleY(105%); */
 }
+
+/* .moveTxtCev { */
+    /* position: fixed !important; */
+    /* transform: translate(-60px, 0); */
+    /* font-size: 24px; */
+    /* top: 12.5px; */
+    /* left: 80px; */
+/* } */
 
 @media only screen and (max-width: 720px) {
     .banner {
         background-size: cover;
         /* background-position: left; */
     }
+
+    /* .moveTxtCev { */
+        /* transform: translate(-20px, 0); */
+    /* } */
 }
+
 @media only screen and (max-width: 520px) {
     .banner {
         height: 500px;
