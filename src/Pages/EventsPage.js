@@ -1,16 +1,16 @@
 import React from 'react'
-import Execom from '../components/Execom/Execom'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
+import Events from '../components/Events/Events'
 
-function Team() {
+function EventsPage() {
   return (
     <div>
-      <Navbar/>
-      <Execom/>
+      <Navbar navFill="Events"/>
+      <Events/>
       <Footer/>
     </div>
   )
 }
 
-export default Team
+export default EventsPage

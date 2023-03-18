@@ -21,8 +21,10 @@
 .navbar {
     z-index: 2000;
     position: fixed;
+    top: 0;
     height: 60px;
     width: 100%;
+    /* max-width: 1540px; */
     display: flex;
     align-items: center;
     justify-content: space-between;

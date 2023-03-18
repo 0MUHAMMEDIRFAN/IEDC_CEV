@@ -1,0 +1,160 @@
+.gallery {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 50px 0px;
+}
+
+.gallery .images {
+    scroll-snap-type: x mandatory;
+    overflow: scroll;
+    display: flex;
+    width: 100%;
+}
+
+.gallery .images .image {
+    scroll-snap-align: start;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .gallery .images .image:active {
+    cursor: grabbing;
+} */
+
+.gallery .images .image img {
+    width: calc((100vw/3) - 20px);
+    height: calc((100vw/4) - 20px);
+    /* height: 280px; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+}
+
+.gallery .images::-webkit-scrollbar {
+    display: none;
+
+}
+
+.gallery .radio {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.gallery .radio input {
+    margin: 0 4px;
+    color: currentColor;
+    appearance: none;
+    background-color: #e49452;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 1px;
+    height: 1px;
+    transition: all ease .1s;
+}
+
+.gallery .radio> :not(input:checked ~ *) {
+    width: 10px;
+    height: 10px;
+}
+
+.gallery .radio input:checked[type="radio"] {
+    border: 1px solid currentColor;
+    width: 10px;
+    /* width: 8px; */
+    height: 10px;
+    /* height: 8px; */
+    background: #ff7300;
+}
+
+.gallery .radio> :not(input:checked ~ *) {
+    width: 6px;
+    height: 6px;
+}
+
+.gallery .radio input:checked+input {
+    width: 6px;
+    height: 6px;
+}
+
+.gallery .radio input:checked+input+input {
+    width: 3px;
+    height: 3px;
+}
+
+.gallery .radio .nav {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    display: flex;
+    margin-inline: 10px;
+    align-items: center;
+
+}
+
+.gallery .radio .nav i {
+    color: #ff7300;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.gallery .radio .left {
+    left: 0;
+}
+
+.gallery .radio .right {
+    right: 0;
+
+}
+
+
+/* images style on gallery section */
+
+.gallery .photos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 33vh);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 20px 0 20px;
+}
+
+.gallery .photos .image{
+    width: 33vh;
+    transition: all ease .1s;
+}
+.gallery .photos .image:hover{
+    transform: scale(105%);
+}
+.gallery .photos .image img{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .gallery .images .image img {
+        width: calc((100vw/2) - 20px);
+        height: calc((100vw/3) - 20px);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .gallery .images .image {
+        scroll-snap-align: center;
+    }
+
+    .gallery .images .image img {
+        width: calc((100vw/1) - 20px);
+        height: calc((100vw/1.5) - 20px);
+    }
+
+}

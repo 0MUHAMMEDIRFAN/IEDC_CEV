@@ -21,9 +21,9 @@ function Execom() {
     return (
         <div className='execom'>
             <div className='cards'>
-                {memebers.map((obj) => {
+                {memebers.map((obj,index) => {
                     return (
-                        <div className='parentCard'>
+                        <div className='parentCard' key={index}>
 
                             <div className="card">
                                 <img className='image' src={obj.imgUrl} alt="Loading..." />

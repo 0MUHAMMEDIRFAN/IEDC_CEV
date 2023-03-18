@@ -41,17 +41,14 @@
     /* top: 100px; */
 }
 
-.banner .contents button {
+/* .banner .contents button {
     width: 110px;
     height: 35px;
     border-radius: 20px;
-    /* background: #DB6C10; */
     background: linear-gradient(to bottom right, #DB6C10 0%, #c4712d 51%, #f0a76c 100%);
-    /* box-shadow: 0 7px 7px rgb(44, 44, 44), 1px 0 7px rgb(0, 0, 0), -1px -1px 7px rgb(34, 34, 34); */
-    /* margin-inline: auto; */
     color: #000;
     transition: all .1s ease-in-out;
-}
+} */
 
 .banner .contents button:hover {
     color: #444;

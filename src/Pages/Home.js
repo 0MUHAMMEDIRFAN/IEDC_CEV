@@ -1,7 +1,7 @@
 import React from 'react'
 import About from '../components/About/About'
 import Banner from '../components/Banner/Banner'
-import Events from '../components/Events/Events'
+import Gallery from '../components/Gallery/Gallery'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import Startup from '../components/Startup/Startup'
@@ -9,11 +9,11 @@ import Startup from '../components/Startup/Startup'
 function Home() {
     return (
         <div>
-            <Navbar />
+            <Navbar navFill="Home" />
             <Banner />
             <About />
-            <Startup />
-            <Events />
+            <Startup viewMore={true} num={2}/>
+            <Gallery viewMore={true}/>
             <Footer />
         </div>
     )

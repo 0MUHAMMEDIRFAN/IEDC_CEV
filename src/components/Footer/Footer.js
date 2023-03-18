@@ -13,7 +13,7 @@ function Footer() {
             <i className='bx bx-map'></i>
             <span>IEDC Collage of Engineering<br />Vadakara<br />kurunthodi,cherandathoor<br /><b>234423,lafksd</b></span>
           </div>
-          <div className="contact">
+          <div className="contactDetails">
             <div className="phone">
               <i className='bx bxs-phone' ></i>
               <span>+910000000000</span>

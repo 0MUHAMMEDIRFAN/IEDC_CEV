@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import "./Navbar.css"
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
+
+  useEffect(()=>{
+    if (props.navFill) {
+      let navFill = document.getElementById(props.navFill)
+      navFill.style.color = "#DB6C10"
+      navFill.style.borderBottom = "1px solid #DB6C10"
+    }  
+  })
+
   const [moved, setMoved] = useState(false)
   const [closed, setClosed] = useState(true)
   const [menu, setMenu] = useState(false)
-  // const txtCev = document.getElementById("txtCev")
-  // const logo = document.getElementById("logo")
+
   const scrolled = (h) => {
     if (window.scrollY >= 50) {
       setMoved(true)
@@ -16,21 +24,12 @@ function Navbar() {
     else {
       setMoved(false)
     }
-    // if (window.scrollY >= 100) {
-    //   txtCev.classList.add("moveTxtCev")
-    //   logo.style.opacity="0"
-    // }
-    // else {
-    //   txtCev.classList.remove("moveTxtCev")
-    //   logo.style.opacity="1"
-    // }
     setMenu(false)
     setClosed(true)
   }
   const navBtn = () => {
     setMenu(!menu);
     setClosed(!closed);
-    // setMoved(true);
     if (closed && menu) { setClosed(false) }
     console.log("clicked");
   }
@@ -41,23 +40,26 @@ function Navbar() {
       <h2 id='logo'>IEDC</h2>
       <div className={menu ? "navLinks" : "navLinks hide"}>
         {/* <BrowserRouter> */}
-          {/* <Routes> */}
-            <Link to="/IEDC_CEV" >
-              <h4>Home</h4>
-            </Link>
-            <Link to="/IEDC_CEV/events" >
-              <h4>Events</h4>
-            </Link>
-            <Link to="/IEDC_CEV/team">
-              <h4>Team</h4>
-            </Link>
-            <Link to="/IEDC_CEV/about">
-              <h4>About</h4>
-            </Link>
-            <Link to="/IEDC_CEV/contact">
-              <h4>Contact</h4>
-            </Link>
-          {/* </Routes> */}
+        {/* <Routes> */}
+        <Link to="/IEDC_CEV" >
+          <h4 id='Home'>Home</h4>
+        </Link>
+        <Link to="/IEDC_CEV/startup">
+          <h4 id='Startup'>Startup</h4>
+        </Link>
+        <Link to="/IEDC_CEV/events" >
+          <h4 id='Events'>Events</h4>
+        </Link>
+        {/* <Link to="/IEDC_CEV/team">
+          <h4 id='Team'>Team</h4>
+        </Link> */}
+        <Link to="/IEDC_CEV/gallery">
+          <h4 id='Gallery'>Gallery</h4>
+        </Link>
+        <Link to="/IEDC_CEV/contact">
+          <h4 id='Contact'>Contact</h4>
+        </Link>
+        {/* </Routes> */}
         {/* </BrowserRouter> */}
 
       </div>

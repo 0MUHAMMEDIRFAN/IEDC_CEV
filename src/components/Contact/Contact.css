@@ -1,0 +1,88 @@
+.contact {
+    display: flex;
+    padding: 70px 20px 0 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contact .text {
+    width: 50%;
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+.contact .contactForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(to right bottom, #252525 5%, #151515 15%,#151515 60%, #252525 80%);
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 50%;
+}
+
+.contact .contactForm div {
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+}
+
+.contact .contactForm div input,textarea {
+    min-height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    padding: 0 20px;
+    border: 1px solid #fff;
+    background: #151515;
+}
+
+.contact .contactForm div input:not([value=""])~p,
+.contact .contactForm div input:focus~p,
+.contact .contactForm div textarea:focus~p,
+.contact .contactForm div textarea:not(:invalid)~p
+ {
+    font-size: 10px;
+    top: 0;
+    transform: translate(0%, -50%);
+    background: #151515;
+    padding: 3px;
+    
+}
+.contact .contactForm div .message {
+    min-height: 100px;
+    padding-block: 10px;
+    resize: vertical;
+}
+
+.contact .contactForm div p {
+    transition: all ease .1s;
+    pointer-events: none;
+    position: absolute;
+    top: 8.5px;
+    left: 20px;
+    font-size: 15px;
+    /* color: #5f6368; */
+}
+
+
+
+@media only screen and (max-width:520px) {
+    .contact {
+        flex-direction: column;
+        min-height: unset;
+    }
+
+    .contact .text{
+        width: 100%;
+        padding-block: 100px;
+    }
+    .contact .contactForm {
+        width: 100%;
+    }
+}

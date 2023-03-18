@@ -2,9 +2,12 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
-import Events from './Pages/Events';
+import ContactPage from './Pages/ContactPage';
+import EventsPage from './Pages/EventsPage';
+import GalleryPage from './Pages/GalleryPage';
 import Home from './Pages/Home';
-import Team from './Pages/Team';
+import StartupPage from './Pages/StartupPage';
+// import TeamPage from './Pages/TeamPage';
 
 function App() {
   return (
@@ -13,10 +16,11 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route exact path="/IEDC_CEV" element={<Home />} />
-            <Route path="/IEDC_CEV/team" element={<Team />} />
-            <Route path="/IEDC_CEV/events" element={<Events />} />
-            <Route path="/IEDC_CEV/About" element={<Team />} />
-            <Route path="/IEDC_CEV/Contact" element={<Team />} />
+            <Route path="/IEDC_CEV/startup" element={<StartupPage />} />
+            <Route path="/IEDC_CEV/events" element={<EventsPage />} />
+            <Route path="/IEDC_CEV/gallery" element={<GalleryPage />} />
+            {/* <Route path="/IEDC_CEV/team" element={<TeamPage />} /> */}
+            <Route path="/IEDC_CEV/Contact" element={<ContactPage />} />
           </Routes>
         </BrowserRouter>
       </header>
