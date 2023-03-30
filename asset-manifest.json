@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IEDC_CEV/static/css/main.0c33765d.css",
-    "main.js": "/IEDC_CEV/static/js/main.f2a833d5.js",
+    "main.css": "/IEDC_CEV/static/css/main.522a91c8.css",
+    "main.js": "/IEDC_CEV/static/js/main.99c173eb.js",
     "static/media/5-5000x3333.jpg": "/IEDC_CEV/static/media/5-5000x3333.a6f5528508b2af8d8c2b.jpg",
     "static/media/0-5000x3333.jpg": "/IEDC_CEV/static/media/0-5000x3333.291838307673dc5a285d.jpg",
     "static/media/2-5000x3333.jpg": "/IEDC_CEV/static/media/2-5000x3333.080934f8996ea5fcfea5.jpg",
@@ -20,11 +20,11 @@
     "static/media/210-200x300.jpg": "/IEDC_CEV/static/media/210-200x300.2869959aa427c1fa5310.jpg",
     "static/media/576-200x300.jpg": "/IEDC_CEV/static/media/576-200x300.9061a0b2aa26dd7024b6.jpg",
     "index.html": "/IEDC_CEV/index.html",
-    "main.0c33765d.css.map": "/IEDC_CEV/static/css/main.0c33765d.css.map",
-    "main.f2a833d5.js.map": "/IEDC_CEV/static/js/main.f2a833d5.js.map"
+    "main.522a91c8.css.map": "/IEDC_CEV/static/css/main.522a91c8.css.map",
+    "main.99c173eb.js.map": "/IEDC_CEV/static/js/main.99c173eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c33765d.css",
-    "static/js/main.f2a833d5.js"
+    "static/css/main.522a91c8.css",
+    "static/js/main.99c173eb.js"
   ]
 }
