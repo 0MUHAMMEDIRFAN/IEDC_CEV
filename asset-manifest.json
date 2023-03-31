@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/IEDC_CEV/static/css/main.3a45bca0.css",
-    "main.js": "/IEDC_CEV/static/js/main.37998273.js",
+    "main.js": "/IEDC_CEV/static/js/main.e8c63205.js",
     "static/media/Sidharth.jpg": "/IEDC_CEV/static/media/Sidharth.1c463b5b6ff588b8027d.jpg",
     "static/media/0-5000x3333.jpg": "/IEDC_CEV/static/media/0-5000x3333.291838307673dc5a285d.jpg",
     "static/media/UI-WEB DEVELOPMENT.jpg": "/IEDC_CEV/static/media/UI-WEB DEVELOPMENT.439c856262908100dfa0.jpg",
     "static/media/INFIXON.jpg": "/IEDC_CEV/static/media/INFIXON.56dd425e9138b9a2f367.jpg",
+    "static/media/Rohith.jpg": "/IEDC_CEV/static/media/Rohith.ea736bd229ad8e06fe4a.jpg",
     "static/media/IDEATHON.jpg": "/IEDC_CEV/static/media/IDEATHON.c10638e426e8f8751574.jpg",
     "static/media/map.png": "/IEDC_CEV/static/media/map.9d32d9f53a485683e592.png",
     "static/media/TETRAD.jpg": "/IEDC_CEV/static/media/TETRAD.a826f9d605a3b540aa3d.jpg",
@@ -16,10 +17,10 @@
     "static/media/576-200x300.jpg": "/IEDC_CEV/static/media/576-200x300.9061a0b2aa26dd7024b6.jpg",
     "index.html": "/IEDC_CEV/index.html",
     "main.3a45bca0.css.map": "/IEDC_CEV/static/css/main.3a45bca0.css.map",
-    "main.37998273.js.map": "/IEDC_CEV/static/js/main.37998273.js.map"
+    "main.e8c63205.js.map": "/IEDC_CEV/static/js/main.e8c63205.js.map"
   },
   "entrypoints": [
     "static/css/main.3a45bca0.css",
-    "static/js/main.37998273.js"
+    "static/js/main.e8c63205.js"
   ]
 }
