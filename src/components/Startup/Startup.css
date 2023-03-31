@@ -94,6 +94,7 @@
 @media screen and (max-width:659px) {
     .startup {
         padding-inline: 10%;
+        min-height: auto;
     }
 
     .startup>h1 {

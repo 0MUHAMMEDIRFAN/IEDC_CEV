@@ -26,7 +26,7 @@ function Footer() {
               <i className='bx bxl-facebook'></i>
               <i className='bx bxl-linkedin'></i>
               <i className='bx bxl-twitter' ></i>
-              <i className='bx bxl-instagram' ></i>
+              <i className='bx bxl-instagram' onClick={()=>window.open("https://www.instagram.com/iedc_cev/")}></i>
             </div>
           </div>
         </div>

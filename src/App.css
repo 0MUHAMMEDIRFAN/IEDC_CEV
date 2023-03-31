@@ -12,7 +12,7 @@
 body {
     background: #000;
     min-width: 280px;
-    /* max-width: 1540px; */
+    animation: fadeIn 1s linear;
 }
 
 .App {
@@ -49,6 +49,20 @@ Link {
     text-decoration: none !important;
 }
 
-.headingText{
+.headingText {
     color: #DB6C10;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

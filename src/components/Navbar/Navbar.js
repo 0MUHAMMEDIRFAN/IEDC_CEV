@@ -18,7 +18,7 @@ function Navbar(props) {
   const [menu, setMenu] = useState(false)
 
   const scrolled = (h) => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 40) {
       setMoved(true)
     }
     else {
