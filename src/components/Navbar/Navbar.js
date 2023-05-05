@@ -50,9 +50,9 @@ function Navbar(props) {
         <Link to="/IEDC_CEV/events" >
           <h4 id='Events'>Events</h4>
         </Link>
-        {/* <Link to="/IEDC_CEV/team">
+        <Link to="/IEDC_CEV/team">
           <h4 id='Team'>Team</h4>
-        </Link> */}
+        </Link>
         <Link to="/IEDC_CEV/gallery">
           <h4 id='Gallery'>Gallery</h4>
         </Link>

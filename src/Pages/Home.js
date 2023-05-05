@@ -14,8 +14,8 @@ function Home() {
             <Banner />
             <About />
             <Startup viewMore={true} num={2}/>
-            {/* <Gallery viewMore={true}/> */}
-            {/* <Execom viewMore={true}/> */}
+            <Gallery viewMore={true}/>
+            <Execom viewMore={true}/>
             <Footer />
         </div>
     )
