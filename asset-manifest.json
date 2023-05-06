@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IEDC_CEV/static/css/main.3a45bca0.css",
-    "main.js": "/IEDC_CEV/static/js/main.aa26f367.js",
+    "main.css": "/IEDC_CEV/static/css/main.ffded929.css",
+    "main.js": "/IEDC_CEV/static/js/main.b132f1c3.js",
     "static/media/Sidharth.jpg": "/IEDC_CEV/static/media/Sidharth.1c463b5b6ff588b8027d.jpg",
     "static/media/photo__y.jpg": "/IEDC_CEV/static/media/photo_6138592741387514820_y.741e78e5c8f432e32317.jpg",
     "static/media/UI-WEB DEVELOPMENT.jpg": "/IEDC_CEV/static/media/UI-WEB DEVELOPMENT.439c856262908100dfa0.jpg",
@@ -15,11 +15,11 @@
     "static/media/bulb(2).jpg": "/IEDC_CEV/static/media/bulb(2).bd947ee4f6554e2abcd2.jpg",
     "static/media/FI.png": "/IEDC_CEV/static/media/FI.e7262f860998682fe77b.png",
     "index.html": "/IEDC_CEV/index.html",
-    "main.3a45bca0.css.map": "/IEDC_CEV/static/css/main.3a45bca0.css.map",
-    "main.aa26f367.js.map": "/IEDC_CEV/static/js/main.aa26f367.js.map"
+    "main.ffded929.css.map": "/IEDC_CEV/static/css/main.ffded929.css.map",
+    "main.b132f1c3.js.map": "/IEDC_CEV/static/js/main.b132f1c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a45bca0.css",
-    "static/js/main.aa26f367.js"
+    "static/css/main.ffded929.css",
+    "static/js/main.b132f1c3.js"
   ]
 }
